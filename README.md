@@ -53,6 +53,45 @@ Additionally, a 12-slide PowerPoint presentation was created summarizing:
 - Key challenges and solutions
 - Final demo (video may be unavailable)
 
+  ## Code Overview
+
+The robotic arm is controlled using an IR remote and four servo motors, each responsible for a different part of the arm:
+
+- **Base rotation**
+- **Lower arm**
+- **Upper arm**
+- **Gripper**
+
+The Arduino reads IR remote signals and interprets them using the `IRremote` library to increment or decrement the movement state of each servo.
+
+### Key Components:
+- `Servo.h` — Used to control four servos via PWM
+- `IRremote.h` — Used to decode input from an IR remote
+- Serial output is used for debugging and monitoring state changes
+
+### Controls (Mapped IR Codes):
+| Remote Button | Action                         |
+|---------------|--------------------------------|
+| 0             | Increase base angle            |
+| 7             | Decrease base angle            |
+| 1             | Raise lower & upper arm        |
+| 4             | Lower lower & upper arm        |
+| 2             | Open gripper                   |
+| 5             | Close gripper                  |
+| *             | Decrease speed multiplier      |
+| #             | Increase speed multiplier      |
+
+Each component responds proportionally to a configurable `multi` value, which acts as a speed/step multiplier.
+
+The robotic arm supports:
+- Fine-grain control of angles (0°–180°)
+- Smooth movement via timed `delay()` between position updates
+- Bidirectional movement for each joint
+- Resettable multipliers to control speed/responsiveness
+
+The code is written in Arduino C and leverages real-time IR command parsing inside the `loop()` function.
+
+
 ## Technologies & Tools Used
 
 - Autodesk Inventor (CAD modeling)
