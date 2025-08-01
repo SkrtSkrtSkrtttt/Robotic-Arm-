@@ -1,75 +1,73 @@
-# Robotic-Arm-
-The objective of this project is to create a Robotic Arm that has movement. You will apply the
-fundaments that we learned in the class.
-Project Process
-Management:
-1. Form a team and establish some type leadership rules
-2. Assign tasks for team members
-3. Create a Gantt chart for the project with group member responsibilities (2 weeks)
+# Robotic Arm Project
 
-Robotic Arm Project
+This project focuses on designing and building a functional robotic arm using 3D-printed parts and embedded control logic. The system integrates mechanical design, electronics, and software to achieve articulated motion. The robotic arm is intended as a hands-on platform for applying foundational engineering concepts, including component interfacing, motion control, and system integration.
 
-Phase #1:
-Structure design:
-Construct the 3d model using the Autodesk inventor
-Step 1: Download all step CAD files of your parts
-Step 2: Create the parts of the Robotic arm using the download components
-Step 3: 3D Print the parts of the Robotic arm
-Step 4: Assemble the components
-Note : Use the design process you have learned in the CIM class to guide you through the
-different phases of the design
-Software design:
+## Objective
 
-1. Get datasheet for the components
-2. Get the component specs and extract the pinout information
-3. Test your components to see if they are working appropriately (use the
-multimeter and the power supply)
-4. Learn the theory of operation of the components
-5. Build the thinkerCad simulator of the actual system
-6. Create testing program for these components
-7. Figure out the driving modes and make function to perform these tasks
-8. Test your functions
+- Design and build a robotic arm that demonstrates controlled movement.
+- Apply classroom concepts in CAD modeling, embedded systems, and circuit design.
+- Manage the project as a team using engineering best practices.
 
-Phase#2:
-Final assembly:
+## Project Management
 
-1. Wire the components and harness the circuit
-2. Troubleshoot and test the circuit using the testing programs created before
-3. Program the Robotic arm system
-4. Evaluate and test the Robotic arm
-5. Modify if necessarily
+- Team-based collaboration with assigned roles
+- Gantt chart used to plan and track tasks over a 2-week timeline
+- Follows a structured process across design, implementation, and documentation phases
 
-Phase#3:
-Documentation:
-1. Create a report explaining the design phases and provide the following:
-● Design idea
-● Modeling
-● Technical drawing
-● Mechanical assembly
-● System design
-● Circuit schematics
-● Pictorial diagram
-● Wire harnessing
-● Programming
-● Troubleshooting guide.
+---
 
-Robotic Arm Project
+## Phase 1: Mechanical Design
 
-● References / datasheet
-2. Create a repository for the CAD files and the programs
-Presentation:
-Create a 12 slides powerpoint presentation
-1. Team members and project name
-2. Summary of the design
-3. Mechanical design
+- Use Autodesk Inventor to construct the full 3D model of the robotic arm
+- Download STEP/CAD files of all necessary components
+- Design and model custom parts using parametric tools
+- 3D print the robotic arm components
+- Assemble the full mechanical system based on the modeled structure
 
-● Technical drawing of the assembly
-● Exploded-view
+## Phase 2: Electronics & Software
 
-4. System design
+- Collect datasheets and identify pinouts for all electronic components (e.g. servos, sensors)
+- Test individual components using a multimeter and power supply
+- Create a TinkerCAD simulation of the full system
+- Write testing programs to verify component functionality
+- Implement movement control logic (e.g., joint positioning, driving modes)
+- Test and refine the functions to ensure reliable behavior
+- Wire and program the full robotic arm system
+- Evaluate performance and iterate as necessary
 
-● Circuit diagrams
-● Programs
-● Troubleshooting notes
+## Phase 3: Documentation & Presentation
 
-5. Demo video
+A complete project report was produced including:
+- Design overview and concept development
+- 3D models and technical drawings
+- Exploded views and mechanical assembly instructions
+- System architecture and circuit schematics
+- Wire harness diagrams and embedded code
+- Troubleshooting guide
+- Bill of Materials (BOM) and references
+
+Additionally, a 12-slide PowerPoint presentation was created summarizing:
+- Team roles and project objectives
+- CAD modeling process
+- System design and control logic
+- Key challenges and solutions
+- Final demo (video may be unavailable)
+
+## Technologies & Tools Used
+
+- Autodesk Inventor (CAD modeling)
+- Arduino (Microcontroller platform)
+- TinkerCAD (Circuit simulation)
+- Arduino C / Embedded C
+- 3D Printer (Mechanical part fabrication)
+- Multimeter & Power Supply (Component testing)
+
+## Status
+
+Functional robotic arm successfully assembled and programmed to respond to control signals. System can be expanded in the future with additional degrees of freedom or sensor feedback.
+
+## Author
+Naafiul Hossain
+
+## Date 
+May 15 2022 
